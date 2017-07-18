@@ -44,7 +44,7 @@ $(function() {
       })
       .fail(function() {
         console.log("email failed");
-        feedbackMessage = "Mail not sent for some reason. Try again?";
+        feedbackMessage = "Mail not sent for some reason. Please try again, or contact me at kaliemartinvoicestudio@gmail.com.";
       })
       .always(function(msg) {
         console.log("mailer responds: " + msg);
