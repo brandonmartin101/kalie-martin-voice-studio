@@ -16,8 +16,8 @@ $(function() {
   });
 
   //$("#contactButton").click(function() {
-  $("#contactForm").submit(function() {
-    event.preventDefault();
+  $("#contactForm").submit(function(e) {
+    e.preventDefault();
     $("#buttonFeedback").html("<img src='img/spinner.gif' />");
     var feedbackMessage = "Please fill out the form as completely as possible before submitting.";
     var data = {
@@ -75,8 +75,8 @@ $(function() {
     }
   }
 
-  $("#practiceButton").click(function() {
-    event.preventDefault();
+  $("#practiceButton").click(function(e) {
+    e.preventDefault();
     console.log("button clicked");
     $("#buttonFeedback").html("<img src='img/spinner.gif' />");
     var feedbackMessage = "";
