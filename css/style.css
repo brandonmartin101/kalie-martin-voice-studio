@@ -213,9 +213,40 @@ body > .container {
   .nav > li > a {
     padding: 10px 25px;
   }
+
+  .page-header svg {
+    height: 80px;
+  }
+  .page-header h1 {
+    padding-top: 5px;
+  }
+}
+@media (min-width: 992px) {
+  .page-header {
+    text-align: center;
+  }
+  .page-header .logo-wrap,
+  .page-header h1 {
+    display: inline-block;
+  }
+  .page-header h1 {
+    margin: 0;
+    padding: 0 0 0 25px;
+    position: relative;
+    top: -39px;
+  }
+  .navbar-default {
+    clear: both;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .navbar-header {
     display: none;
+  }
+  .page-header .logo-wrap {
+    float: left;
+  }
+  .page-header svg {
+    margin-left: 15px;
   }
 }
