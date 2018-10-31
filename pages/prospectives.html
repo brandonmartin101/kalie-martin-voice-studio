@@ -58,7 +58,7 @@
 </head>
 
 <body>
-  <div class="container">
+  <div class="container" role="main">
     <div class="row clearfix">
       <div class="col-md-12 column">
         <div class="page-header">
@@ -78,7 +78,7 @@
             <a href="../index.html">Kalie Martin Voice Studio</a>
           </h1>
         </div>
-        <nav class="navbar navbar-default navbar-static-top" role="navigation">
+        <nav class="navbar navbar-default navbar-static-top">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
               <span class="sr-only">Toggle navigation</span>
@@ -108,7 +108,7 @@
         <div class="row clearfix">
           <div class="col-xs-12">
             <div class="col-md-8 column">
-              <h3>Prospective Students</h3>
+              <h2 class="h3">Prospective Students</h2>
               <p>Kalie offers weekly 30-minute ($23) or 45-minute ($30) voice lessons, depending on the level and needs
                 of each
                 student. Her lessons focus on improving technique through vocal exercises, assigned repertoire, and
@@ -133,9 +133,7 @@
                 more about
                 her and what she can offer you, please contact her by filling out the left-most messaging form.</p>
               </p>
-              <h3>
-                Lesson Contracts
-              </h3>
+              <h2 class="h3">Lesson Contracts</h2>
               <p>
                 Before beginning lessons, each student is asked to fill out a
                 <a href="../content/Lesson Contract.pdf" target="_blank">Lesson Contract</a>. This lesson contract
@@ -148,32 +146,35 @@
               </p>
             </div>
             <div class="col-md-4 column">
-              <h4 style="text-align: center;">Contact Me</h4>
+              <h3 class="h4 text-center">Contact Me</h3>
 
-              <form role="form" method="post" id="contactForm">
+              <form method="post" id="contactForm">
                 <div class="form-group">
                   <label for="firstName">First name:</label>
-                  <input type="text" class="form-control" id="firstName" name="firstName" required />
+                  <input type="text" class="form-control" id="firstName" name="firstName" required aria-label="First Name" />
                   <label for="lastName">Last name:</label>
-                  <input type="text" class="form-control" id="lastName" name="lastName" required />
+                  <input type="text" class="form-control" id="lastName" name="lastName" required aria-label="Last Name" />
                   <label for="emailAddress">Email address:</label>
-                  <input type="email" class="form-control" id="emailAddress" name="emailAddress" required />
+                  <input type="email" class="form-control" id="emailAddress" name="emailAddress" required aria-label="Email Address" />
                   <label for="phoneNumber">Phone number:</label>
-                  <input type="text" class="form-control" id="phoneNumber" name="phoneNumber" required />
-                  <label for="preferContact">Which contact method do you prefer?</label>
+                  <input type="text" class="form-control" id="phoneNumber" name="phoneNumber" required aria-label="Phone Number" />
+                  <label for="preferContact" id="contactRadio">Which contact method do you prefer?</label>
                   <br />
                   <p>
-                    <input type="radio" name="preferContact" value="Email" required> Email
-                    <input type="radio" name="preferContact" value="Phone" required> Phone
+                    <input type="radio" name="preferContact" value="Email" required aria-labelledby="contactRadio">
+                    <label for="Email"></label>Email</label>
+                    <input type="radio" name="preferContact" value="Phone" required aria-labelledby="contactRadio">
+                    <label for="Phone">Phone</label>
                   </p>
-                  <label for="voiceType">Voice type:</label>
+                  <label for="voiceType" id="voiceRadio">Voice type:</label>
                   <p>
-                    <input type="radio" name="voiceType" value="Soprano" required> Soprano
-                    <input type="radio" name="voiceType" value="Alto" required> Alto
-                    <input type="radio" name="voiceType" value="Tenor" required> Tenor
-                    <input type="radio" name="voiceType" value="Bass" required> Bass
+                    <input type="radio" name="voiceType" value="Soprano" required aria-labelledby="voiceRadio"> Soprano
+                    <input type="radio" name="voiceType" value="Alto" required aria-labelledby="voiceRadio"> Alto
+                    <input type="radio" name="voiceType" value="Tenor" required aria-labelledby="voiceRadio"> Tenor
+                    <input type="radio" name="voiceType" value="Bass" required aria-labelledby="voiceRadio"> Bass
                     <br />
-                    <input type="radio" name="voiceType" value="Unknown" required> Don't know
+                    <input type="radio" name="voiceType" value="Unknown" required aria-labelledby="voiceRadio"> Don't
+                    know
                   </p>
                   <label for="age">Age:</label>
                   <input type="text" class="form-control" id="age" name="age" />
@@ -198,20 +199,15 @@
       </div>
     </div>
   </div>
-  <div class="fixed-side-social-container">
+  <div class="fixed-side-social-container" role="complementary">
     <a class="social-icon facebook-icon" href="https://www.facebook.com/KalieMartinVoiceStudio" target="_blank" title="Like me on Facebook">
       <img src="../img/facebook-f.png" alt="Like me on Facebook">
     </a>
   </div>
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-12 text-center" id="footer">
-        <p class="text-muted">This site built by
-          <a href="http://brandonpmartin.com" class="text-info" target="_blank">Brandon Martin</a> using Bootstrap —
-          &#169;2014 Brandon Martin</p>
-      </div>
-    </div>
-  </div>
+
+  <footer>
+    &copy; 2014-2018 Kalie Martin Voice Studio
+  </footer>
 </body>
 <!-- CDN of jQuery, load at end of page load -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>

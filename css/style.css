@@ -1,11 +1,16 @@
+/* Theme colors:
+Teal: #007c63
+Darker teal: #006b56
+ */
+
 ::selection {
   color: #fafafa;
-  background-color: #008d71;
+  background-color: #007c63;
 }
 
 ::moz-selection {
   color: #fafafa;
-  background-color: #008d71;
+  background-color: #007c63;
 }
 
 body {
@@ -35,8 +40,12 @@ footer {
 h1,
 h2,
 h3,
-h4 {
-  color: #008d71;
+h4,
+.h1,
+.h2,
+.h3,
+.h4 {
+  color: #007c63;
 }
 
 h1 {
@@ -70,8 +79,14 @@ blockquote:nth-child(2) {
   margin: 0;
 }
 
+blockquote footer,
+blockquote small,
+blockquote .small {
+  color: #666;
+}
+
 a {
-  color: #008d71;
+  color: #007c63;
   text-decoration: underline;
 }
 
@@ -90,15 +105,15 @@ a:visited {
 }
 
 h1 a {
-  color: #008d71;
+  color: #007c63;
 }
 
 h1 a:visited {
-  color: #008d71;
+  color: #007c63;
 }
 
 blockquote p {
-  color: #008d71;
+  color: #007c63;
 }
 
 .container {
@@ -126,8 +141,8 @@ body>.container {
 }
 
 .page-header svg:hover {
-  fill: #008d71;
-  stroke: #008d71;
+  fill: #007c63;
+  stroke: #007c63;
 }
 
 .navbar-default {
@@ -146,13 +161,14 @@ body>.container {
 .navbar-default .navbar-nav>li>a {
   border-bottom: 2px solid transparent;
   text-decoration: none;
+  color: #666;
 }
 
 .navbar-default .navbar-nav>.active>a,
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
   background: transparent;
-  border-bottom: 2px solid #008d71;
+  border-bottom: 2px solid #007c63;
 }
 
 .navbar-default .navbar-toggle:hover,
@@ -163,7 +179,7 @@ body>.container {
 .navbar-default .navbar-toggle .icon-bar {
   width: 30px;
   height: 3px;
-  background-color: #008d71;
+  background-color: #007c63;
   margin-left: auto;
   margin-right: auto;
 }
@@ -183,7 +199,7 @@ body>.container {
 
 .carousel {
   margin: 0px 0px 10px 0px;
-  border: 1px solid #008d71;
+  border: 1px solid #007c63;
 }
 
 .form-container {
@@ -248,11 +264,16 @@ body>.container {
   margin: 14px 0 0 13px;
 }
 
+.btn-primary {
+  background-color: #337ab7;
+  border-color: #3071aa;
+}
+
 
 #about-image {
   width: 100%;
   margin-right: 15px;
-  border: 1px solid #008d71;
+  border: 1px solid #007c63;
 }
 
 #recaptcha_area,
@@ -267,12 +288,12 @@ body>.container {
 }
 
 #submitButton {
-  background-color: #008d71;
-  border-color: #008d71;
+  background-color: #007c63;
+  border-color: #007c63;
 }
 
 #studyForm {
-  background-color: #008d71;
+  background-color: #007c63;
   border-radius: 10px;
   padding: 5px 10px;
   margin: 10px;
